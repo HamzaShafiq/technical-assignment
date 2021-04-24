@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Model: MyString
+  year: 1
+  chassis_number: 1
+  color: MyString
+  registration_date: 2021-04-24
+  odometer_reading: 1
+  customer: one
+
+two:
+  Model: MyString
+  year: 1
+  chassis_number: 1
+  color: MyString
+  registration_date: 2021-04-24
+  odometer_reading: 1
+  customer: two
