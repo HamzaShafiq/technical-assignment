@@ -24,7 +24,6 @@ class ImportCsv
       # Vehicle.where(created_at: Time.now).insert_all!(vehicles.as_json)
       # That's why using active_record import gem
       # Making an assumption here that chasis number would be unique.
-
       Vehicle.import vehicles
   	rescue Exception => e
   	  @error = e.full_message
