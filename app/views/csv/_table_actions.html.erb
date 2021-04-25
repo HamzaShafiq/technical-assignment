@@ -1,0 +1,10 @@
+<div class='form-inline mt-4 flex-end mb-3'>
+  <%= form_tag(search_path, method: :get, remote: true) do %>
+    <%= text_field_tag(:search, params[:search], class: 'form-control') %>
+    <%= submit_tag 'Search', class: 'mx-sm-2 btn btn-primary' %>
+  <% end %>
+
+  <%= form_tag(generate_customers_report_path, method: :post) do %>
+    <%= button_tag 'Generate Customer Report', class: 'btn btn-primary' %>
+  <% end %>
+</div>

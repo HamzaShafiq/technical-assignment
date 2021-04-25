@@ -1,15 +1,12 @@
 <h4>Vehicle Data</h4>
 
 <% if @vehicles_data.present? %>
-  <%= form_tag(search_path, method: :get, remote: true, class: 'form-inline mt-4 flex-end') do %>
-    <div class="mb-3">
-      <%= text_field_tag(:search, params[:search], class: 'form-control') %>
-      <%= submit_tag 'Search', class: 'mx-sm-3 btn btn-primary' %>
-    </div>
-  <% end %>
+  <%= render 'table_actions' %>
+
   <div id='vehicles_data_table' >
     <%= render 'vehicles_data_table', vehicles_data: @vehicles_data %>
   </div>
+
 <% else %>
   <p>No available data.<p> 
 <% end %>
