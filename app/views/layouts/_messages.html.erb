@@ -1,0 +1,19 @@
+<% if notice.present? %>
+  <script type="text/javascript">
+    Swal.fire({
+      icon: 'success',
+      title: 'Good job!',
+      text: `<%= notice.html_safe %>`
+    })
+  </script>
+<% end %>
+
+<% if alert.present? %>
+  <script type="text/javascript">
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: "<%= alert %>",
+    })
+  </script>
+<% end %>
