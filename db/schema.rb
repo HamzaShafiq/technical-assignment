@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2021_04_24_115814) do
   end
 
   create_table "vehicles", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.string "Model"
+    t.string "model"
     t.integer "year"
     t.integer "chassis_number"
     t.string "color"
