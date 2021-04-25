@@ -1,0 +1,5 @@
+<% if @searched_data.present? %>
+  $("#vehicles_data_table").html("<%= j render(:partial => 'csv/vehicles_data_table', locals: {vehicles_data: @searched_data}) %>");
+<% else %>
+  $("#vehicles_data_table").html("<h6>No data found.</h6>");
+<% end %>  

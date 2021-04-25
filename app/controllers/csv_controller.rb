@@ -17,6 +17,12 @@ class CsvController < ApplicationController
   	end
   end
 
+  def search_vehicles
+    csv_service = CsvData.new
+    @searched_data = csv_service.searched_data(params[:search])
+    respond_to :js
+  end
+
 
   private
 

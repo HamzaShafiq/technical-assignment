@@ -15,3 +15,5 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 window.Swal = Swal;
+window.jQuery = $;
+window.$ = $;

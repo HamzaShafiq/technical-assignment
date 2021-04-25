@@ -6,4 +6,8 @@ class CsvData
     @vehicles_data = Vehicle.includes(:customer)
   end
 
+  def searched_data(search)
+    Vehicle.searched_vehicles(search)
+  end
+
 end
