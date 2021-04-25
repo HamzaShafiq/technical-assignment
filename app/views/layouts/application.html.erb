@@ -10,8 +10,14 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center">
+    <a class="navbar-brand" href="#">Beema Vehicle Report</a>
+  </nav>
+
   <body>
     <%= render 'layouts/messages' %>
-    <%= yield %>
+    <div class="container m-t-30">
+      <%= yield %>
+    </div>
   </body>
 </html>
