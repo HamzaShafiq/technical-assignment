@@ -1,7 +1,7 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Model: MyString
+  model: MyString
   year: 1
   chassis_number: 1
   color: MyString
@@ -10,7 +10,7 @@ one:
   customer: one
 
 two:
-  Model: MyString
+  model: MyString
   year: 1
   chassis_number: 1
   color: MyString

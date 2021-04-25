@@ -1,7 +1,6 @@
-require "test_helper"
+require 'rails_helper'
 
-class VehicleTest < ActiveSupport::TestCase
-
+RSpec.describe Customer, type: :model do
   describe "Associations" do
     it { should have_many(:vehicles) }
   end
