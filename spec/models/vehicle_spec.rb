@@ -11,11 +11,15 @@ RSpec.describe Vehicle, type: :model do
     it { should belong_to(:customer) }
   end
 
-  it "Invalid record should not be created" do
-    expect(invalid_vehicle.valid?).to be_falsey
+  context 'Check Model records' do 
+    it "Invalid record should not be created" do
+      expect(invalid_vehicle.valid?).to be_falsey
+    end
+
+    it "Valid record should be created" do
+      expect(valid_vehicle.valid?).to be_truthy
+    end
   end
 
-  it "Valid record should be created" do
-    expect(valid_vehicle.valid?).to be_truthy
-  end
+  
 end
