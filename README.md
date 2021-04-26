@@ -1,24 +1,15 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+This project is made using Rails 6 and ruby 3 mentioned in gemfile.
 
-* Ruby version
+1. Run bundle install
 
-* System dependencies
+2. Run rake db:create. (You may need to update database.yml according to your local setup in mysql)
 
-* Configuration
+3. Run rake db:migrate.
 
-* Database creation
+4. Run rails server
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+5. Go to localhost:3000 and your application will be running.
